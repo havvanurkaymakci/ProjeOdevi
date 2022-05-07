@@ -1,0 +1,171 @@
+
+#wrapper {
+	margin: 0 auto;
+	padding: 0;
+}
+ 
+/* Header */
+ 
+#header-wrapper {
+	height: 60px;
+	background: #525050;
+	margin-bottom: 25px;
+}
+ 
+#header {
+	height: 60px;
+	margin: 0 auto;
+}
+ 
+/* Logo */
+ 
+#logo {
+	height: 60px;
+	margin: 0px auto;
+	padding: 5px 100px 30px 250px;
+	color: rgb(194, 181, 214); font-family: arial; font-size:12px;
+}
+
+#menu-wrapper {
+	width: 1020px;
+	height: 50px;
+	margin: 0px auto;
+	padding: 0px;
+	background: #8564b1;
+	border-radius: 10px;
+}
+ 
+#menu {
+	margin: 0;
+	padding: 0px 20px;
+	list-style: none;
+	line-height: 60px;
+	letter-spacing: -1px;
+	text-decoration: none;
+	text-transform: lowercase;
+	text-shadow: 2px 2px 2px rgba(0,0,0,.3);
+	font-family: 'Abel', sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	color: rgb(194, 181, 214);
+}
+
+#menu li {
+	float: left;
+	margin-right: 1px;
+}
+ 
+#menu a {
+	display: block;
+	float: left;
+	height: 50px;
+	margin: 0px;
+	color: #FFFFFF;
+}
+ 
+#menu .page {
+	text-shadow: 2px 2px 2px rgba(0,0,0,.3);
+	background: #8564b1;
+}
+ 
+#menu a:hover {
+	background: #753ebe;
+	text-decoration: none;
+	text-shadow: 2px 2px 2px rgba(0,0,0,.3);
+	color: #FFFFFF;
+}
+ 
+#menu span {
+	padding: 0px 20px;
+}
+
+ 
+#menu > li.active {
+    background: #32818c;
+	color: #FFFFFF;
+}
+ 
+.dropotron li.opener {
+	border-right: solid 2px #FFFFFF;
+}
+ 
+.dropotron {
+	margin: 0px;
+	padding: 10px 0px;
+	background: #32818c;
+	list-style: none;
+	text-transform: lowercase;
+	font-family: 'Abel', sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+ 
+.dropotron a {
+	color: #fff;
+	text-decoration: none;
+}
+ 
+.dropotron li {
+	margin: 0px;
+	padding: 5px 20px;
+}
+ 
+.dropotron li:hover, .dropotron li.active {
+	background: #a182d1;
+}
+
+.giris
+{
+color:rgb(39, 23, 66); font-size: 16px ; font-style: arial;
+}
+
+.metin
+{
+    padding:40px;
+    margin:60px; 
+    color:black; font-size: 14px; font-family: arial;
+}
+
+
+#sol
+{
+    float:left;
+    padding:40px;
+    margin:30px; 
+    background: #c0abe0;
+    border-style:ridge;
+    width: 430px; 
+    height: 280px; 
+    border-color:rgb(62, 71, 80);  
+}
+.resim
+{
+    width: auto;
+    height: auto;
+    padding: 40px 60px 40px 120px;
+}
+			
+#sag
+{
+	float:left;
+    padding:30px;
+    margin:30px; 
+	width:80px;
+	height:130px;
+    background: #91f3c2;	
+}
+			
+#alt
+{   
+  width:200px;
+  height:50px;
+}
+
+#foot
+{
+    width:900px;
+    height:30px;
+    background: #525050;
+}
+			

@@ -1,0 +1,30 @@
+.eser
+{
+    padding: 15px;
+    margin: 15px;
+    position: relative;
+    float:left;
+   width: 360px;
+   height: 300px;
+     
+}
+
+#baslık
+{
+    margin-top: 10px;
+    float:left;
+    width: 1340px;
+    height: 40px;
+    background-color: rgb(63, 112, 80); 
+
+}
+
+#baslıkyazi
+{
+    margin:  5px 30px;
+    padding: 5px 20px;
+    font-size: 18px; 
+    color:rgb(217, 243, 227);
+    font-family:Arial, Helvetica, sans-serif;
+}
+

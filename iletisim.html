@@ -1,0 +1,117 @@
+<!DOCTYPE html> 
+<head>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>  webteknolojileri.com </title>
+    <link href="style.css" rel="stylesheet">
+    <link href="menu.css" rel="stylesheet">
+    <link href="iletisim.css" rel="stylesheet">
+
+
+    <script>
+
+        function formKontrol()
+        {
+            Form=document.forms['iletisim'];
+
+            adi= document.getElementById("ad").value;
+            mail=document.getElementById("eposta").value;
+            sifre=document.getElementById("sifre").value;
+           if (adi=="" || mail=="" || sifre=="" )
+           {
+            alert("Lütfen alanı boş bırakmayınız!");
+            return false;
+           }
+
+           if (sifre.length<6)
+           {
+            alert("En az 6 karakter giriniz");
+            return false;
+           }
+           
+           var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+           var mail = document.getElementById("mail").value;
+           if(reg.test(mail) == false) 
+            {
+             alert('Hatalı Mail Formatı!');
+             return false;
+            }
+            document.getElementById("demo").innerHTML = text;
+
+            CheckSecim=0;
+                for(i=0; i<Form.elements['kulup'].length; i++)
+                {
+                    if(Form.elements['kulup'][i].checked==1){
+                        CheckSecim=1;
+                        break;
+                    }
+               }
+
+             if(CheckSecim==0) alert("Lütfen hobi seçiniz");
+             else Form.submit();
+        }
+        </script>
+
+      
+    <div id="wrapper">
+        <div id="header-wrapper">
+            <div id="header">
+                <div id="logo">
+                    <h1>WEB TEKNOLOJİLERİ</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="menu-wrapper">
+		<ul id="menu">
+			<li class="page"> <a href="index.html"><span>Anasayfa</span></a></li>		
+            <li><a href="ozgecmis.html"><span>Özgeçmiş</span></a></li>
+            <li><a href="sehrim.html"><span>Şehrim</span></a></li>
+            <li><a href="mirasimiz.html"><span>Mirasımız</span></a></li>
+            <li><a href="giris.html"><span>Öğrenci Girişi</span></a></li>           	
+			<li><a href="iletisim.html"><span>İletişim</span></a></li>
+		</ul>
+	</div>
+    
+</head>
+
+<body> 
+    <body background="img/bg.jpg">
+ <form  name="iletisim" onsubmit="return formKontrol()" > 
+       <div id="divsekil" class="yazitipi">
+    <h1 class="yazitipi"> İletişim formu</h1>
+
+  <label class="labels" for="ad">Ad soyad:</label> <br>
+  <input  name="ad" type="text" > <br/>
+  <label class="labels" for="eposta">E-posta:</label> <br>
+  <input  name="eposta" type="email" /> <br/>
+  <label class="labels" for="sifre">Şifre:</label><br>
+  <input name="sifre" type="password"  /> <br><br>
+  <label for="cinsiyet">Cinsiyet:</label>
+  <input  type="radio" name="cinsiyet" value="erkek" checked> Erkek 
+  <input  type="radio" name="cinsiyet" value="kadin"> Kadın<br><br>
+  <label > Katılmak istediğiniz kulüpleri seçiniz:</label> <br>
+  <input type="checkbox" name="kulup" value="muzik">Müzik
+  <input type="checkbox" name="kulup" value="gezi">Gezi 
+  <input type="checkbox" name="kulup" value="dil">Yabancı dil<br><br>
+
+    <label  class="yazitipi" > Bölümünüzü seçiniz:</label> <br>
+    <select name="bolum">
+    <option value="bilgisayar">Bilgisayar müh.</option>
+    <option value="insaat">İnşaat müh.</option>
+    <option value="makine">Makine müh.</option>
+    <option value="endustri">Endüstri müh.</option>
+    </select><br><br>
+  
+    <label >Fikir ve önerilerinizi bizimle paylaşın:</label> <br>
+    <textarea name="mesaj"  rows="10" cols="30"> </textarea> <br><br>
+
+    <button type="button" onclick="formKontrol()">GÖNDER</button>
+    <input type="reset" value="SIFIRLA"> <br>
+    <p id="demo"></p>
+ 
+ </form>
+ </div>
+</body>

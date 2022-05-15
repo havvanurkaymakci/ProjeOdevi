@@ -1,0 +1,22 @@
+.yazitipi
+{
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    
+}
+
+.labels
+{
+    width: 80px;
+}
+
+#divsekil
+{
+    margin: 30px;
+    margin-left: 160px;
+    background-color: rgb(223, 221, 221);
+    padding: 40px;
+    width:300px;
+    float:left;
+}
